@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+  <button class="beepbeep">beep me</button>
+  <br>
+  <br>
+  <button class="bg">background changer</button>
+
+  <script>
+  document.querySelector('.beepbeep').addEventListener('click',function(){
+      //define div inner html
+    var content = '<p>beep</p>';
+      //create a new div for each click
+    var el = document.createElement('div');
+      //add the content to the new element
+    el.innerHTML = content;
+      //append the element to the body of the document
+    document.body.appendChild(el);
+  })
+
+  document.querySelector('.bg').addEventListener('click', function(){
+    var randomColor = '#' + Math.random().toString(16).slice(2, 8);
+    //console.log(Math.random().toString(16).slice(2, 8));
+    console.log(randomColor);
+    var target = document.body;
+    target.style.background = randomColor;
+  })
+
+
+  </script>
+
+</body>
+</html>

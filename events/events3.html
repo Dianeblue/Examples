@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<div id="money">SHOW ME THE MONEY!!!!<p></p></div>
+
+<div id="oprah">show me the opera<p></p></div>
+
+
+  <script>
+    $('div').on('click', function(){
+      var target = $(this.attr('id');
+      if(target ==='money'){
+
+      if($(this).hasClass('hidden') === true){
+        $(this).removeClass('hidden');
+        $(this).childern('p').text('here is the money.');
+      } else if ($(this).hasClass('hidden') === false){
+        $(this).addClass('hidden');
+        $(this).childern('p').text('');
+      }
+    } else {
+      $(this).childern('p').text('HERE SHE IS!!');
+    }
+  });
+
+  </script>
+</body>
+</html>

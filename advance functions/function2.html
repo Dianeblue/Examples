@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id="hellowfunction">hellow</div>
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+  <script>
+
+    var functionFunction = function (fn) {
+    var answer = fn()
+  $('#hellowfunction').text(answer);
+  }
+  functionFunction( function(){return 'hi'})
+
+</script>
+
+
+</body>
+</html>

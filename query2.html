@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<h1></h1>
+<img>
+<div id="notification"></div>
+<div class="container">
+</div>
+
+
+  <script>
+  $('body').css('background-color', 'red')
+$('img').attr('src','http://i.imgur.com/nWGCwiE.gif')
+
+$('h1').text('hello')
+$('#notification').html('<div class="alert">Hold on! <b>an error</b> has occured!</p>')
+$('.container').append("<p>What's the difference between <i>.append()</i> and .html()?</p>")
+	</script>
+</body>
+</html>

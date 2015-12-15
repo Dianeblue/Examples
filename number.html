@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id="target"></div>
+  <script>
+  var input;
+
+while( !(input = prompt('Put in a number')) ){
+  console.log("you didn't write anything");
+} if  (isNaN(input)) {
+  alert("That's not a number");
+} else {
+  document.getElementById("target").innerHTML = "You wrote: " + parseInt(input) + "."
+}
+
+console.log("yay, you did it! you wrote: " + input);
+
+  </script>
+
+</body>
+</html>

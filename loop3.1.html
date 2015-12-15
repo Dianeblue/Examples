@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id = "target"></div>
+  <script>
+  var n = 1;
+  var string = '';
+
+    while(n <= 8) {
+      if (n !== 8) {
+        string += "<p>" + n + "</p><hr>";
+    }
+    else
+      {
+      string+= "<p>" + n + "</p>";
+      }
+    n++;
+    }
+
+document.querySelector("#target").innerHTML = string;
+  </script>
+
+</body>
+</html>

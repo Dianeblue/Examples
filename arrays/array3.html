@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+  <div id="bucket_list"><h1>bucket list</h1></div>
+  <div id="recipe"><h1>recipe</h1></div>
+
+  <script>
+  var bucket_list = [];
+  var i = 0;
+  bucket_list[0] = "visit fox island";
+  bucket_list[1] = "visit cat island";
+  bucket_list.push("visit bunny island", "visit doggy island");
+  bucket_list.unshift("own a beach house", "own my own business");
+  var dying_wish = bucket_list.pop();
+  var do_it_now = bucket_list.shift();
+
+
+  var recipe = [];
+
+  recipe[0]= "grate cheese onto a tortilla";
+  recipe[1]= "place another torilla on top";
+  recipe[2]= "place in microwave for 1 min";
+  recipe[3]= "then grilled on stove on meduim heat till golden brown";
+
+
+  $('#target').append('<p>' + bucket_list[i] + '</p>');
+  i++
+
+function append_strings(array, steve){
+  var i = 0
+  while (i < array.length){
+    $(steve).append('<p>' + array[i] + '</p>');
+    i++;
+  }
+}
+
+append_strings(bucket_list, "#bucket_list");
+append_strings(recipe, "#recipe");
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+
+  <html>
+  <head>
+  <title>HTML Document</title>
+  <script type="text/javascript">
+  //<![CDATA[
+  try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"44fe55fe611cd74fc90c75ff082ca1de",petok:"6d98fb9c80daf14a354d27d44fefc11415028df4-1449021191-1800",zone:"savvycoders.com",rocket:"a",apps:{},sha2test:0}];document.write('<script type="text/javascript" src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=38857570ac/cloudflare.min.js"><'+'\/script>');}}catch(e){};
+  //]]>
+  </script>
+  </head>
+  <body>
+  <div id="everything">
+  <h1>A heading!</h1>
+  <p>Here's some text!</p>
+  <p>Here's a second set of text!</p>
+  <div class="holder">
+  <ul>
+  <li>List Item 1</li>
+  <li>List Item 2</li>
+  <li>List Item 3</li>
+  </ul>
+  </div>
+  <div class="holder">
+  <ol>
+  <li>List Item 4</li>
+  <li>List Item 5</li>
+  <li>List Item 6</li>
+  </ol>
+  </div>
+  <div id="change-me">This part needs to change!</div>
+  <div id="secret">We should hide this!</div>
+  </div>
+
+    <script>
+
+  $('h1').css('color' , 'blue');
+  $('body').css('background-color' , 'red');
+  $('#everything').css('font-size' , '2em');
+  $('.holder').css('border' , 'solid black 2px');
+  $('li').css('font-weight' , 'bold');
+  $('h1').next('p').css('color', 'green');
+  $('#secret').css('display' , 'none');
+  $('#secret').css('display', 'block');
+  $('#change-me').text("i cant wait to eat pizza");
+  $('#change-me').append("i want pizza now");
+  $('#change-me').html("<p>I cant wait to have some beers</p><p>and to hangout with my friends</p>");
+  $('li').text("I cant wait to have some beers and to hangout with my friends");
+  $('li').append(" i cant wait to go to bed and sleep in");
+  $('#everything').append("<li>eat</li> <li>sleep</li> <li>repeat</li>");
+  $('ul li:first-child').text("first new sentence");
+  $('ul li:nth-child(2)').text("second new sentence");
+  $('ul li:nth-child(3)').text("thrid new sentence");
+  $('ul li:nth-child').text("i love animals");
+  $('ul li:nth-child(2)').text("i love eggs");
+  $('ul li:nth-child(3)').text("i love everything");
+  $('#everything').append("<ol><li>bananas</li><li>cats</li><li>more things</li>");
+      </script>
+
+
+  </body>
+  </html>
+
+
+
+  <script>
+
+
+
+  </script>
+
+</body>
+</html>

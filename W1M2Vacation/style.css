@@ -1,0 +1,33 @@
+
+  body{
+    background-color: #b8c2cf;
+      }
+  h1{
+    font-family: cursive;
+
+  }
+
+    #all{
+    width 900;
+    margin: 0 auto;
+
+    }
+
+  }
+
+  .blog1{
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: cursive;
+    text-align: left;
+    background-color: blue;
+    width:400px;
+    height: 200px
+
+  }
+
+  .blog2 {
+    width: 400px;
+    height: 200px;
+    background-color: blue;
+}

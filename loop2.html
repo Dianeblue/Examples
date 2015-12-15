@@ -1,0 +1,21 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="lyrics"></div>
+    <script>
+      var n = 100;
+      var song = " ";
+      while ( n >= 0 ) {
+        if ( n !== 0 ) {
+          song = song + " " + n + " bottles of beer on the wall!";
+        } else {
+          song+= " no bottles of beer!"; }
+          n--; }
+document.querySelector("#lyrics").textContent = song
+    </script>
+  </body>
+  </html>

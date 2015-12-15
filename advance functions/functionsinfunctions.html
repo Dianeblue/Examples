@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <div id='retun'></div>
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+  <script>
+  var function1 = function () {
+          return 1
+        }
+
+        var function2 = function () {
+          return 3 * 2
+        }
+
+        var function3 = function () {
+          return "This is a string!"
+        }
+
+        var function4 = function () {
+          4 * 3;
+        }
+
+        var boxFunction = [
+          function1,
+          function2,
+          function3,
+          function4
+        ]
+
+        var arrayRunner = function (array) {
+          var array2 = [];
+          array.forEach(function (item) {
+            var answer = item();
+            array2.push(answer);
+            console.log(array2);
+          })
+
+          $('#return').text(array2);
+        }
+
+        arrayRunner(boxOfFunctions);
+
+
+
+
+
+
+  </script>
+</body>
+</html>

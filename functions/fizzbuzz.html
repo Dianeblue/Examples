@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<script>
+
+var fizz_buzz = function (string1, string2){
+  var count = 1;
+  while (count <= 100); {
+    if (count%5 === 0 && count%3 === 0); {
+      console.log(string1 + string2);
+    } else if (count%3 === 0); {
+      console.log(string1);
+    } else if (count%5 === 0); {
+      console.log(string2);
+    } else {
+      console.log(count);
+    }
+    count++;
+  }
+}
+fizz_buzz("fizz", "buzz");
+
+
+</script>
+</body>
+</html>

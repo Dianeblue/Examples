@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #output {
+      width: 100px;
+      height: 100px;
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <div id="output"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+  <script>
+
+    var obj = {
+      greeting: 'howdy',
+      text: 'aha! you found the text',
+      color: 'red',
+      'spaces-and-dashes can be used': ' but need to have quotes'
+    }
+    for (var key in obj) {
+        if (key === 'color'){
+          $('#output').css('background-color', obj[key]);
+        }
+        if (key === 'text') {
+          $('#output').append(obj[key]);
+        }
+    }
+
+
+
+  </script>
+
+</body>
+</html>

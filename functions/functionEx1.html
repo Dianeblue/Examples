@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+  <script>
+
+var tripler = function(number) {
+  var answer = number * 3;
+  console.log(answer);
+  return answer;
+}
+//second way to do this function
+var tripler2 = function (number) {
+  return number * 3;
+}
+
+var multiply = function (num1, num2) {
+  return num1 * num2;
+
+}
+
+//take 2 numbers
+var calculation = function (num1, num2) {
+  //take first number and triple it
+  var first = tripler(num1);
+  //multiply that result by the second number
+  var answer = multiply(first, num1);
+  console.log("answer", answer);
+}
+calculation(3, 2);
+
+  </script>
+
+</body>
+</html>
